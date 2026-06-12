@@ -1,0 +1,5 @@
+server/storage/*.sqlite
+server/public/uploads/*
+!server/public/uploads/.gitkeep
+.DS_Store
+ios/HappyHome/HappyHome.xcodeproj/xcuserdata/

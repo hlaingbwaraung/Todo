@@ -1,0 +1,230 @@
+/* HappyHome — English */
+
+/* Tabs */
+"tab.home" = "Home";
+"tab.search" = "Search";
+"tab.favorites" = "Favorites";
+"tab.profile" = "Profile";
+
+/* Common */
+"common.close" = "Close";
+"common.cancel" = "Cancel";
+"common.done" = "Done";
+"common.retry" = "Retry";
+"common.none" = "None";
+
+/* Errors */
+"error.title" = "Something went wrong";
+"error.network" = "Couldn't reach the server. Check your connection and try again.";
+"error.decoding" = "Received an unexpected response from the server.";
+"error.unauthorized" = "Please log in to continue.";
+"error.server" = "The server returned an error. Please try again later.";
+"error.unknown" = "An unexpected error occurred.";
+
+/* Home */
+"home.greeting.morning" = "Good morning";
+"home.greeting.afternoon" = "Good afternoon";
+"home.greeting.evening" = "Good evening";
+"home.subtitle" = "Find a place you'll love coming home to.";
+"home.search_placeholder" = "Search by area, station, or keyword";
+"home.featured" = "Featured Properties";
+"home.categories" = "Categories";
+"home.new_listings" = "New Listings";
+"home.recently_viewed" = "Recently Viewed";
+
+/* Search */
+"search.title" = "Search";
+"search.placeholder" = "Area, station, keyword…";
+"search.filters" = "Filters";
+"search.results_count" = "%d results";
+"search.sort" = "Sort";
+"search.sort.newest" = "Newest";
+"search.sort.price_asc" = "Price: Low to High";
+"search.sort.price_desc" = "Price: High to Low";
+"search.sort.size_desc" = "Size: Largest";
+"search.view_mode" = "View";
+"search.view.list" = "List";
+"search.view.map" = "Map";
+"search.no_results.title" = "No properties found";
+"search.no_results.message" = "Try adjusting your search or filters.";
+
+/* Filters */
+"filter.title" = "Filters";
+"filter.reset" = "Reset";
+"filter.apply" = "Apply";
+"filter.apply_count" = "Apply (%d)";
+"filter.all" = "All";
+"filter.transaction_type" = "Rent / Buy";
+"filter.price_range" = "Price Range";
+"filter.min_price" = "Min price";
+"filter.max_price" = "Max price";
+"filter.no_limit" = "No limit";
+"filter.layout" = "Layout";
+"filter.size" = "Size & Age";
+"filter.min_size" = "Minimum size";
+"filter.max_age" = "Building age";
+"filter.within_years" = "Within %d yrs";
+"filter.max_walk" = "Walk to Station";
+"filter.within_walk" = "≤ %d min";
+"filter.options" = "Options";
+"filter.pet_allowed" = "Pets allowed";
+"filter.parking" = "Parking available";
+"filter.category" = "Category";
+
+/* Property */
+"property.rent" = "Rent";
+"property.buy" = "Buy";
+"property.featured" = "Featured";
+"property.walk_min" = "%d min walk";
+"property.age_years" = "%d yrs old";
+"property.new_built" = "Newly built";
+"property.views" = "%d views";
+"property.pet_allowed" = "Pets OK";
+"property.parking" = "Parking";
+"price.per_month_suffix" = "/mo";
+
+/* Property detail */
+"detail.specs" = "Property Overview";
+"detail.layout" = "Layout";
+"detail.size" = "Size";
+"detail.floor" = "Floor";
+"detail.floor_value" = "Floor %1$d of %2$d";
+"detail.built" = "Built";
+"detail.built_value" = "Built %d";
+"detail.deposit" = "Deposit";
+"detail.key_money" = "Key money";
+"detail.months_value" = "%.1f mo";
+"detail.management_fee_format" = "+ %@/mo mgmt fee";
+"detail.amenities" = "Amenities";
+"detail.description" = "Description";
+"detail.floor_plan" = "Floor Plan";
+"detail.location" = "Location";
+"detail.agent" = "Listing Agent";
+"detail.call" = "Call";
+"detail.email" = "Email";
+"detail.similar" = "Similar Properties";
+"detail.inquire" = "Inquire";
+"detail.book_visit" = "Book a Visit";
+
+/* Amenities */
+"amenity.autolock" = "Auto-lock";
+"amenity.balcony" = "Balcony";
+"amenity.air_conditioner" = "Air conditioner";
+"amenity.bath_toilet_separate" = "Separate bath & toilet";
+"amenity.delivery_box" = "Delivery box";
+"amenity.internet_free" = "Free internet";
+"amenity.system_kitchen" = "System kitchen";
+"amenity.floor_heating" = "Floor heating";
+
+/* Inquiry */
+"inquiry.title" = "Inquiry";
+"inquiry.submit" = "Send Inquiry";
+"inquiry.success.title" = "Inquiry sent";
+"inquiry.success.message" = "Thank you! The agent will get back to you shortly.";
+
+/* Booking */
+"booking.title" = "Book a Visit";
+"booking.date_time" = "Preferred Date & Time";
+"booking.preferred_date" = "Date";
+"booking.preferred_time" = "Time";
+"booking.submit" = "Request Visit";
+"booking.success.title" = "Request sent";
+"booking.success.message" = "We'll confirm your viewing appointment by email.";
+
+/* Forms */
+"form.contact_info" = "Contact Information";
+"form.name" = "Name";
+"form.email" = "Email";
+"form.phone_optional" = "Phone (optional)";
+"form.message" = "Message";
+"form.message_optional" = "Message (optional)";
+"form.password" = "Password";
+"form.confirm_password" = "Confirm password";
+
+/* Auth */
+"auth.login" = "Log In";
+"auth.signup" = "Sign Up";
+"auth.welcome_back" = "Welcome back";
+"auth.login_subtitle" = "Log in to save favorites and track your inquiries.";
+"auth.signup_title" = "Create your account";
+"auth.signup_subtitle" = "Save favorites, compare properties, and book visits.";
+"auth.no_account" = "Don't have an account? Sign up";
+"auth.password_min" = "Password must be at least 8 characters.";
+"auth.password_mismatch" = "Passwords do not match.";
+
+/* Favorites */
+"favorites.title" = "Favorites";
+"favorites.remove" = "Remove";
+"favorites.logged_out.title" = "Save your favorites";
+"favorites.logged_out.message" = "Log in to keep a list of the properties you love.";
+"favorites.empty.title" = "No favorites yet";
+"favorites.empty.message" = "Tap the heart on any property to save it here.";
+
+/* Compare */
+"compare.title" = "Compare";
+"compare.add" = "Add to Compare";
+"compare.remove" = "Remove from Compare";
+"compare.clear" = "Clear";
+"compare.empty.title" = "Nothing to compare";
+"compare.empty.message" = "Add up to 3 properties from their detail pages or long-press a card.";
+"compare.price" = "Price";
+"compare.layout" = "Layout";
+"compare.size" = "Size";
+"compare.age" = "Age";
+"compare.walk" = "Station walk";
+"compare.pet" = "Pets";
+"compare.parking" = "Parking";
+"compare.management_fee" = "Mgmt fee";
+"compare.deposit" = "Deposit";
+"compare.key_money" = "Key money";
+"compare.amenity_count" = "Amenities";
+"compare.yes" = "Yes";
+"compare.no" = "—";
+
+/* Profile */
+"profile.logged_out.title" = "Make HappyHome yours";
+"profile.logged_out.message" = "Log in or create an account to manage favorites, inquiries, and visit bookings.";
+"profile.my_inquiries" = "My Inquiries";
+"profile.my_reservations" = "My Reservations";
+"profile.recently_viewed" = "Recently Viewed";
+"profile.settings" = "Settings";
+"profile.logout" = "Log Out";
+"profile.logout.confirm_title" = "Are you sure you want to log out?";
+
+/* My inquiries / reservations */
+"my_inquiries.empty.title" = "No inquiries yet";
+"my_inquiries.empty.message" = "Questions you send about properties will appear here.";
+"my_reservations.empty.title" = "No reservations yet";
+"my_reservations.empty.message" = "Your viewing appointments will appear here.";
+
+/* Recently viewed */
+"recently_viewed.clear" = "Clear";
+"recently_viewed.empty.title" = "Nothing viewed yet";
+"recently_viewed.empty.message" = "Properties you open will be remembered here.";
+
+/* Status */
+"status.new" = "New";
+"status.in_progress" = "In progress";
+"status.closed" = "Closed";
+"status.pending" = "Pending";
+"status.confirmed" = "Confirmed";
+"status.cancelled" = "Cancelled";
+"status.completed" = "Completed";
+
+/* Settings */
+"settings.about" = "About";
+"settings.version" = "Version";
+"settings.api_base_url" = "API Base URL";
+"settings.api_base_url.footer" = "Developer setting. Leave empty to use the default (%@).";
+"settings.save_base_url" = "Save";
+"settings.saved" = "Saved";
+"settings.language" = "Language";
+"settings.language.note" = "HappyHome follows your device language. Japanese property details are shown automatically when your device is set to Japanese.";
+"settings.language.open_settings" = "Open iOS Settings";
+
+/* Accessibility */
+"a11y.favorite.add" = "Add to favorites";
+"a11y.favorite.remove" = "Remove from favorites";
+"a11y.filter" = "Filter results";
+"a11y.share" = "Share property";
+"a11y.toggle_password" = "Show or hide password";
