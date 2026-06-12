@@ -1,0 +1,230 @@
+/* HappyHome — 日本語 */
+
+/* Tabs */
+"tab.home" = "ホーム";
+"tab.search" = "検索";
+"tab.favorites" = "お気に入り";
+"tab.profile" = "マイページ";
+
+/* Common */
+"common.close" = "閉じる";
+"common.cancel" = "キャンセル";
+"common.done" = "完了";
+"common.retry" = "再試行";
+"common.none" = "なし";
+
+/* Errors */
+"error.title" = "エラーが発生しました";
+"error.network" = "サーバーに接続できません。通信環境をご確認のうえ、再度お試しください。";
+"error.decoding" = "サーバーから予期しない応答を受信しました。";
+"error.unauthorized" = "続行するにはログインしてください。";
+"error.server" = "サーバーエラーが発生しました。しばらくしてから再度お試しください。";
+"error.unknown" = "予期しないエラーが発生しました。";
+
+/* Home */
+"home.greeting.morning" = "おはようございます";
+"home.greeting.afternoon" = "こんにちは";
+"home.greeting.evening" = "こんばんは";
+"home.subtitle" = "理想の住まいを見つけましょう。";
+"home.search_placeholder" = "エリア・駅名・キーワードで検索";
+"home.featured" = "おすすめ物件";
+"home.categories" = "物件種別";
+"home.new_listings" = "新着物件";
+"home.recently_viewed" = "最近見た物件";
+
+/* Search */
+"search.title" = "物件検索";
+"search.placeholder" = "エリア・駅名・キーワード";
+"search.filters" = "絞り込み";
+"search.results_count" = "%d件";
+"search.sort" = "並び替え";
+"search.sort.newest" = "新着順";
+"search.sort.price_asc" = "価格が安い順";
+"search.sort.price_desc" = "価格が高い順";
+"search.sort.size_desc" = "面積が広い順";
+"search.view_mode" = "表示切替";
+"search.view.list" = "リスト";
+"search.view.map" = "地図";
+"search.no_results.title" = "物件が見つかりません";
+"search.no_results.message" = "検索条件を変更してお試しください。";
+
+/* Filters */
+"filter.title" = "絞り込み条件";
+"filter.reset" = "リセット";
+"filter.apply" = "この条件で検索";
+"filter.apply_count" = "この条件で検索（%d）";
+"filter.all" = "すべて";
+"filter.transaction_type" = "賃貸・売買";
+"filter.price_range" = "価格帯";
+"filter.min_price" = "下限";
+"filter.max_price" = "上限";
+"filter.no_limit" = "指定なし";
+"filter.layout" = "間取り";
+"filter.size" = "面積・築年数";
+"filter.min_size" = "専有面積（下限）";
+"filter.max_age" = "築年数";
+"filter.within_years" = "築%d年以内";
+"filter.max_walk" = "駅からの徒歩分数";
+"filter.within_walk" = "%d分以内";
+"filter.options" = "こだわり条件";
+"filter.pet_allowed" = "ペット可";
+"filter.parking" = "駐車場あり";
+"filter.category" = "物件種別";
+
+/* Property */
+"property.rent" = "賃貸";
+"property.buy" = "売買";
+"property.featured" = "おすすめ";
+"property.walk_min" = "徒歩%d分";
+"property.age_years" = "築%d年";
+"property.new_built" = "新築";
+"property.views" = "閲覧数 %d";
+"property.pet_allowed" = "ペット可";
+"property.parking" = "駐車場あり";
+"price.per_month_suffix" = "/月";
+
+/* Property detail */
+"detail.specs" = "物件概要";
+"detail.layout" = "間取り";
+"detail.size" = "専有面積";
+"detail.floor" = "所在階";
+"detail.floor_value" = "%1$d階 / %2$d階建";
+"detail.built" = "築年数";
+"detail.built_value" = "%d年築";
+"detail.deposit" = "敷金";
+"detail.key_money" = "礼金";
+"detail.months_value" = "%.1fヶ月";
+"detail.management_fee_format" = "管理費 %@/月";
+"detail.amenities" = "設備・条件";
+"detail.description" = "物件詳細";
+"detail.floor_plan" = "間取り図";
+"detail.location" = "所在地・アクセス";
+"detail.agent" = "取扱不動産会社";
+"detail.call" = "電話する";
+"detail.email" = "メール";
+"detail.similar" = "類似物件";
+"detail.inquire" = "お問い合わせ";
+"detail.book_visit" = "見学予約";
+
+/* Amenities */
+"amenity.autolock" = "オートロック";
+"amenity.balcony" = "バルコニー";
+"amenity.air_conditioner" = "エアコン";
+"amenity.bath_toilet_separate" = "バス・トイレ別";
+"amenity.delivery_box" = "宅配ボックス";
+"amenity.internet_free" = "インターネット無料";
+"amenity.system_kitchen" = "システムキッチン";
+"amenity.floor_heating" = "床暖房";
+
+/* Inquiry */
+"inquiry.title" = "お問い合わせ";
+"inquiry.submit" = "送信する";
+"inquiry.success.title" = "送信しました";
+"inquiry.success.message" = "お問い合わせありがとうございます。担当者より折り返しご連絡いたします。";
+
+/* Booking */
+"booking.title" = "見学予約";
+"booking.date_time" = "希望日時";
+"booking.preferred_date" = "希望日";
+"booking.preferred_time" = "希望時間";
+"booking.submit" = "予約を申し込む";
+"booking.success.title" = "予約を受け付けました";
+"booking.success.message" = "見学日時の確定について、メールにてご連絡いたします。";
+
+/* Forms */
+"form.contact_info" = "ご連絡先";
+"form.name" = "お名前";
+"form.email" = "メールアドレス";
+"form.phone_optional" = "電話番号（任意）";
+"form.message" = "お問い合わせ内容";
+"form.message_optional" = "ご要望など（任意）";
+"form.password" = "パスワード";
+"form.confirm_password" = "パスワード（確認）";
+
+/* Auth */
+"auth.login" = "ログイン";
+"auth.signup" = "新規登録";
+"auth.welcome_back" = "おかえりなさい";
+"auth.login_subtitle" = "ログインすると、お気に入りの保存やお問い合わせ履歴の確認ができます。";
+"auth.signup_title" = "アカウント作成";
+"auth.signup_subtitle" = "お気に入り登録・物件比較・見学予約をご利用いただけます。";
+"auth.no_account" = "アカウントをお持ちでない方はこちら";
+"auth.password_min" = "パスワードは8文字以上で入力してください。";
+"auth.password_mismatch" = "パスワードが一致しません。";
+
+/* Favorites */
+"favorites.title" = "お気に入り";
+"favorites.remove" = "削除";
+"favorites.logged_out.title" = "お気に入りを保存";
+"favorites.logged_out.message" = "ログインすると、気になる物件をお気に入りに保存できます。";
+"favorites.empty.title" = "お気に入りはまだありません";
+"favorites.empty.message" = "物件のハートをタップすると、ここに保存されます。";
+
+/* Compare */
+"compare.title" = "物件比較";
+"compare.add" = "比較に追加";
+"compare.remove" = "比較から削除";
+"compare.clear" = "クリア";
+"compare.empty.title" = "比較する物件がありません";
+"compare.empty.message" = "物件詳細ページ、またはカードの長押しから最大3件まで追加できます。";
+"compare.price" = "価格";
+"compare.layout" = "間取り";
+"compare.size" = "専有面積";
+"compare.age" = "築年数";
+"compare.walk" = "駅徒歩";
+"compare.pet" = "ペット";
+"compare.parking" = "駐車場";
+"compare.management_fee" = "管理費";
+"compare.deposit" = "敷金";
+"compare.key_money" = "礼金";
+"compare.amenity_count" = "設備数";
+"compare.yes" = "○";
+"compare.no" = "—";
+
+/* Profile */
+"profile.logged_out.title" = "HappyHomeをもっと便利に";
+"profile.logged_out.message" = "ログインまたは新規登録すると、お気に入り・お問い合わせ・見学予約を管理できます。";
+"profile.my_inquiries" = "お問い合わせ履歴";
+"profile.my_reservations" = "見学予約";
+"profile.recently_viewed" = "最近見た物件";
+"profile.settings" = "設定";
+"profile.logout" = "ログアウト";
+"profile.logout.confirm_title" = "ログアウトしますか？";
+
+/* My inquiries / reservations */
+"my_inquiries.empty.title" = "お問い合わせはまだありません";
+"my_inquiries.empty.message" = "物件へのお問い合わせがここに表示されます。";
+"my_reservations.empty.title" = "見学予約はまだありません";
+"my_reservations.empty.message" = "見学のご予約がここに表示されます。";
+
+/* Recently viewed */
+"recently_viewed.clear" = "クリア";
+"recently_viewed.empty.title" = "閲覧履歴はありません";
+"recently_viewed.empty.message" = "閲覧した物件がここに表示されます。";
+
+/* Status */
+"status.new" = "新規";
+"status.in_progress" = "対応中";
+"status.closed" = "完了";
+"status.pending" = "確認待ち";
+"status.confirmed" = "確定";
+"status.cancelled" = "キャンセル";
+"status.completed" = "見学済み";
+
+/* Settings */
+"settings.about" = "アプリについて";
+"settings.version" = "バージョン";
+"settings.api_base_url" = "APIベースURL";
+"settings.api_base_url.footer" = "開発者向け設定です。空欄の場合はデフォルト（%@）を使用します。";
+"settings.save_base_url" = "保存";
+"settings.saved" = "保存しました";
+"settings.language" = "言語";
+"settings.language.note" = "HappyHomeは端末の言語設定に従います。端末が日本語の場合、物件情報は自動的に日本語で表示されます。";
+"settings.language.open_settings" = "iOSの設定を開く";
+
+/* Accessibility */
+"a11y.favorite.add" = "お気に入りに追加";
+"a11y.favorite.remove" = "お気に入りから削除";
+"a11y.filter" = "検索条件で絞り込む";
+"a11y.share" = "物件を共有";
+"a11y.toggle_password" = "パスワードの表示を切り替え";
