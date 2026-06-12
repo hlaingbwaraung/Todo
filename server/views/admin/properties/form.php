@@ -45,6 +45,9 @@ $err = static fn(string $key) => isset($errors[$key])
 
 <form method="post" action="<?= e($action) ?>" enctype="multipart/form-data" class="property-form">
   <?= Csrf::field() ?>
+  <?php /* Default submit target: without this, Enter in a text field would trigger the
+           first submit button in the form — the image-delete formaction button. */ ?>
+  <button type="submit" hidden aria-hidden="true" tabindex="-1"></button>
 
   <div class="form-grid">
     <div class="card form-card span-2">
