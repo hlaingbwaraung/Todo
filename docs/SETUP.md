@@ -31,14 +31,21 @@ php server/bin/seed.php
 php -S localhost:8000 -t server/public server/public/router.php
 ```
 
+Both scripts are safe by default: `migrate.php` refuses to touch an existing
+schema (use `--fresh` to drop and recreate everything — destroys all data),
+and `seed.php` refuses to overwrite a non-empty database (use `--force`).
+
 ### Production (MySQL + Apache)
 
 ```bash
 mysql -u root -p -e "CREATE DATABASE happyhome CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 export DB_DRIVER=mysql DB_NAME=happyhome DB_USER=... DB_PASS=... APP_KEY="$(openssl rand -hex 32)"
-php server/bin/migrate.php
-php server/bin/seed.php        # optional demo data
+php server/bin/migrate.php     # creation only; never drops existing tables
+php server/bin/seed.php        # optional demo data; refuses if data exists
 ```
+
+Set `APP_URL` to your public base URL (e.g. `https://api.example.com`) —
+uploaded image paths are resolved against it in API responses.
 
 Point the Apache `DocumentRoot` at `server/public/` — the included `.htaccess`
 routes everything through `index.php`. Set the environment variables via

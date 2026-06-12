@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 /**
  * Seeds demo data (truncates existing rows first).
- *   php server/bin/seed.php
+ *   php server/bin/seed.php            # refuses if properties already exist
+ *   php server/bin/seed.php --force    # replaces ALL existing data
  */
 
 $base = dirname(__DIR__);
@@ -24,6 +25,21 @@ use App\Core\Database;
 $data = require $base . '/database/seed.php';
 $pdo = Database::pdo();
 $now = date('Y-m-d H:i:s');
+
+if (!in_array('--force', $argv, true)) {
+    $count = 0;
+    try {
+        $count = (int)$pdo->query('SELECT COUNT(*) FROM properties')->fetchColumn();
+    } catch (PDOException) {
+        fwrite(STDERR, "Schema not found — run php server/bin/migrate.php first.\n");
+        exit(1);
+    }
+    if ($count > 0) {
+        fwrite(STDERR, "Database already contains $count properties — seeding would replace ALL data.\n");
+        fwrite(STDERR, "Run with --force to proceed:  php server/bin/seed.php --force\n");
+        exit(1);
+    }
+}
 
 foreach (['devices', 'reservations', 'inquiries', 'favorites', 'property_images', 'properties', 'categories', 'users'] as $table) {
     $pdo->exec("DELETE FROM $table");

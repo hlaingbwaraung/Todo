@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 /**
  * Creates all tables for the configured DB driver.
- *   php server/bin/migrate.php
+ *   php server/bin/migrate.php            # safe: refuses to touch an existing schema
+ *   php server/bin/migrate.php --fresh    # DROPS all tables first (destroys all data)
  */
 
 $base = dirname(__DIR__);
@@ -30,6 +31,36 @@ if (!is_file($schemaFile)) {
 
 $sql = (string)file_get_contents($schemaFile);
 $pdo = Database::pdo();
+$fresh = in_array('--fresh', $argv, true);
+
+$tables = ['devices', 'reservations', 'inquiries', 'favorites', 'property_images', 'properties', 'categories', 'users'];
+$existing = false;
+try {
+    $pdo->query('SELECT 1 FROM users LIMIT 1');
+    $existing = true;
+} catch (PDOException) {
+    // Table absent: clean database.
+}
+
+if ($existing && !$fresh) {
+    fwrite(STDERR, "Database schema already exists — nothing to do.\n");
+    fwrite(STDERR, "To DROP every table and recreate from scratch (DESTROYS ALL DATA), run:\n");
+    fwrite(STDERR, "  php server/bin/migrate.php --fresh\n");
+    exit(1);
+}
+
+if ($fresh) {
+    if ($driver === 'mysql') {
+        $pdo->exec('SET FOREIGN_KEY_CHECKS = 0');
+    }
+    foreach ($tables as $table) {
+        $pdo->exec("DROP TABLE IF EXISTS $table");
+    }
+    if ($driver === 'mysql') {
+        $pdo->exec('SET FOREIGN_KEY_CHECKS = 1');
+    }
+    echo "Dropped existing tables (--fresh).\n";
+}
 
 // Split on statement-terminating semicolons (none of our statements embed ';').
 $statements = array_filter(

@@ -93,7 +93,7 @@ final class Property
             'pet_allowed'        => (bool)$row['pet_allowed'],
             'parking_available'  => (bool)$row['parking_available'],
             'amenities'          => $amenities,
-            'floor_plan_url'     => $row['floor_plan_url'],
+            'floor_plan_url'     => self::absoluteUrl($row['floor_plan_url']),
             'agent_name'         => $row['agent_name'],
             'agent_company'      => $row['agent_company'],
             'agent_phone'        => $row['agent_phone'],
@@ -109,12 +109,12 @@ final class Property
             $images ??= self::images((int)$row['id']);
             $shaped['images'] = array_map(static fn(array $img) => [
                 'id'         => (int)$img['id'],
-                'url'        => $img['url'],
+                'url'        => self::absoluteUrl($img['url']),
                 'sort_order' => (int)$img['sort_order'],
             ], $images);
-            $shaped['thumbnail_url'] = $images[0]['url'] ?? null;
+            $shaped['thumbnail_url'] = self::absoluteUrl($images[0]['url'] ?? null);
         } else {
-            $shaped['thumbnail_url'] = $thumb;
+            $shaped['thumbnail_url'] = self::absoluteUrl($thumb);
         }
 
         if ($isFavorite !== null) {
@@ -194,6 +194,23 @@ final class Property
             }
         }
         return $thumbs;
+    }
+
+    /**
+     * Locally uploaded images are stored root-relative ("/uploads/x.jpg");
+     * API clients need a scheme+host, so resolve against APP_URL.
+     */
+    private static function absoluteUrl(?string $url): ?string
+    {
+        if ($url === null || !str_starts_with($url, '/')) {
+            return $url;
+        }
+        static $base = null;
+        if ($base === null) {
+            $config = require dirname(__DIR__, 2) . '/config.php';
+            $base = rtrim((string)$config['app']['url'], '/');
+        }
+        return $base . $url;
     }
 
     /** @return array<int,true> set of favorited property ids */

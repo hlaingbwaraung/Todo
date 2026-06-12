@@ -1,15 +1,5 @@
 -- HappyHome schema (MySQL 8, utf8mb4)
-
-SET FOREIGN_KEY_CHECKS = 0;
-DROP TABLE IF EXISTS devices;
-DROP TABLE IF EXISTS reservations;
-DROP TABLE IF EXISTS inquiries;
-DROP TABLE IF EXISTS favorites;
-DROP TABLE IF EXISTS property_images;
-DROP TABLE IF EXISTS properties;
-DROP TABLE IF EXISTS categories;
-DROP TABLE IF EXISTS users;
-SET FOREIGN_KEY_CHECKS = 1;
+-- Creation only: drops are handled by `bin/migrate.php --fresh`.
 
 CREATE TABLE users (
     id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,

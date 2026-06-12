@@ -1,15 +1,7 @@
 -- HappyHome schema (SQLite)
+-- Creation only: drops are handled by `bin/migrate.php --fresh`.
 
 PRAGMA foreign_keys = ON;
-
-DROP TABLE IF EXISTS devices;
-DROP TABLE IF EXISTS reservations;
-DROP TABLE IF EXISTS inquiries;
-DROP TABLE IF EXISTS favorites;
-DROP TABLE IF EXISTS property_images;
-DROP TABLE IF EXISTS properties;
-DROP TABLE IF EXISTS categories;
-DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
